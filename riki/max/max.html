@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Payment Calculator</title>
+    <link rel="stylesheet" type="text/css" href="maxstyles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ikmēneša maksājuma kalkulators</h1>
+        <label for="loanAmount">kredīta cena (€):</label>
+        <input type="number" id="loanAmount" placeholder="Ievadi kredīta cenu">
+
+        <label for="interestRate">Gada procentu likme (%):</label>
+        <input type="number" id="interestRate" placeholder="Ievadi gada procentu likmi">
+
+        <label for="loanTerm">Termiņš (mēneši):</label>
+        <input type="number" id="loanTerm" placeholder="Ievadi termiņu">
+
+        <label for="firstPayment">Pirmā iemaksa(€):</label>
+        <input type="number" id="firstPayment" placeholder="Ievadi pirmo iemaksu">
+
+        <button onclick="calculateMonthlyPayment()">Aprēķināt</button>
+
+        <p id="monthlyPayment">Mēneša maksa: 0.00€</p>
+    </div>
+
+    <script src="maxscript.js"></script>
+</body>
+</html>
